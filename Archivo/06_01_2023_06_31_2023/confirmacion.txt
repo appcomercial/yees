@@ -1,0 +1,88 @@
+commit fd311986cc1dac75664c4eada6785ac8153d748d
+Author: Carlos Aleman <caleman9791@protonmail.com>
+Date:   Fri Jun 30 02:22:12 2023 -0400
+
+    Directorio woocommerce  se volvió a actualizar
+    
+    Verificar ficheros  para no cometer errores
+
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/hocs/with-scroll-to-top/index.tsx       |   87 ++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/hocs/with-scroll-to-top/style.scss      |    4 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/base/hocs/with-scroll-to-top/test/index.js   |   96 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/blocks/cart-checkout-shared/block-settings/index.tsx |   39 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/block.json  |   18 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/block.tsx   |   27 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/context.ts  |   30 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/edit.tsx    |   39 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/frontend.ts |   17 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/index.tsx   |  274 ++++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/register-components.ts |   65 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/types.ts    |    4 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/filter-wrapper/upgrade.tsx |   98 ++
+ .../packages/woocommerce-blocks/assets/js/blocks/product-query/variations/elements/product-summary.tsx     |   24 +
+ .../packages/woocommerce-blocks/assets/js/blocks/product-query/variations/elements/product-template.tsx    |   24 +
+ .../packages/woocommerce-blocks/assets/js/blocks/product-query/variations/elements/product-title.tsx       |   24 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/blocks/product-query/variations/elements/utils.tsx   |   31 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/blocks/product-query/variations/index.ts     |    1 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/blocks/product-query/variations/product-query.tsx    |   97 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/blocks/product-query/variations/related-products.tsx |  133 ++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/block-title/editor.scss    |    6 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/block-title/index.js       |   60 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/default-notice/editor.scss |   18 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/default-notice/index.tsx   |  191 +++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/edit-product-link/index.tsx        |   56 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/editable-button/index.tsx  |   88 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/error-placeholder/editor.scss      |   18 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/error-placeholder/error-message.tsx            |   60 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/error-placeholder/index.tsx        |   75 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/error-placeholder/stories/error-message.tsx    |   27 +
+ .../woocommerce-blocks/assets/js/editor-components/error-placeholder/stories/error-placeholder.tsx         |   74 +
+ .../assets/js/editor-components/expandable-search-list-item/expandable-search-list-item.tsx                |   51 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/external-link-card/editor.scss     |   47 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/external-link-card/index.tsx       |   72 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/external-link-card/stories/index.tsx           |   26 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/feedback-prompt/index.js   |   95 ++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/feedback-prompt/style.scss |   19 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/grid-content-control/index.js      |   73 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/grid-layout-control/index.js       |  101 ++
+ .../packages/woocommerce-blocks/assets/js/editor-components/heading-toolbar/heading-level-icon.js          |   29 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/heading-toolbar/index.js   |   55 +
+ .../woocommerce-blocks/assets/js/editor-components/incompatible-payment-gateways-notice/editor.scss        |   40 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/incompatible-payment-gateways-notice/index.tsx |   85 +
+ .../js/editor-components/incompatible-payment-gateways-notice/use-incompatible-payment-gateways-notice.ts  |  103 ++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/page-selector/index.js     |   48 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/product-attribute-term-control/index.tsx       |  237 +++
+ .../packages/woocommerce-blocks/assets/js/editor-components/product-attribute-term-control/style.scss      |   35 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-category-control/index.js  |  234 +++
+ .../packages/woocommerce-blocks/assets/js/editor-components/product-category-control/style.scss            |   10 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-control/index.js   |  220 +++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-control/style.scss |   45 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-orderby-control/index.js   |   84 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-stock-control/index.tsx    |  102 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-tag-control/index.js       |  213 +++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/product-tag-control/style.scss     |   10 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/products-control/index.js  |  106 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/index.ts       |    2 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/item.tsx       |  192 +++
+ .../packages/woocommerce-blocks/assets/js/editor-components/search-list-control/search-list-control.tsx    |  351 +++++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/style.scss     |  287 ++++
+ .../woocommerce-blocks/assets/js/editor-components/search-list-control/test/__snapshots__/index.js.snap    | 4510 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ .../packages/woocommerce-blocks/assets/js/editor-components/search-list-control/test/hierarchy.js          |  204 +++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/test/index.js  |  221 +++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/types.ts       |  123 ++
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/search-list-control/utils.tsx      |  143 ++
+ .../packages/woocommerce-blocks/assets/js/editor-components/sidebar-compatibility-notice/editor.scss       |   17 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/sidebar-compatibility-notice/index.tsx         |   47 +
+ .../assets/js/editor-components/sidebar-compatibility-notice/use-compatibility-notice.ts                   |   32 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/tag/index.tsx   |   98 ++
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/tag/style.scss  |   44 +
+ .../packages/woocommerce-blocks/assets/js/editor-components/tag/test/__snapshots__/index.js.snap           |  545 +++++++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/tag/test/index.js          |   37 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/text-toolbar-button/index.js       |   17 +
+ .../woocommerce/packages/woocommerce-blocks/assets/js/editor-components/text-toolbar-button/style.scss     |   13 +
+ .../wp-content/plugins/woocommerce/packages/woocommerce-blocks/assets/js/editor-components/utils/index.js  |  219 +++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/extensions/google-analytics/constants.ts     |    2 +
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/extensions/google-analytics/index.ts         |  304 ++++
+ .../plugins/woocommerce/packages/woocommerce-blocks/assets/js/extensions/google-analytics/utils.ts         |  118 ++
+ .../cart-cross-sells-products--cart-blocks/order-summary--ef6753df-frontend.js                             |    1 +
+ 79 files changed, 11472 insertions(+)

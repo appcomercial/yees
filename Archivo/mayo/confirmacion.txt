@@ -1,0 +1,10 @@
+commit 61c226f4980dc7d342c57bd13ce69844e1756654
+Author: Carlos Aleman <caleman9791@gmail.com>
+Date:   Mon May 15 03:28:39 2023 -0400
+
+    Aplicacion funcional  nesesita cambios en la base de datos y en  php
+    para garantizar su fuciinaminto
+
+ htdocs/conexion/comp.php | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
