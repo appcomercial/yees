@@ -1,0 +1,44 @@
+Cronología 
+-------------------------------------
+2022
+  1 enero
+  2 febrero
+  3 marzo
+  4 abril
+  5 Mayo
+  6 junio
+  7 julio
+  8 agosto
+  9 septiembre 
+  10 octubre
+  11 noviembre 
+  12 diciembre 
+-------------------------------------
+
+-------------------------------------
+2023
+
+  1 enero *
+  2 febrero *
+  3 marzo *
+  4 abril *
+  5 Mayo *
+  6 junio
+  7 julio
+  8 agosto
+  9 septiembre 
+  10 octubre
+  11 noviembre 
+  12 diciembre 
+-------------------------------------
+
+
+Mes de Mayo requiere reporte completo.
+
+ git show eb76472375c5cf3fc50c4d7391ab2394a7e6fb05 > nombre.txt
+
+cd C:\wamp64\www\app\appcomercial\diagramap
+
+ git show --medium eb76472375c5cf3fc50c4d7391ab2394a7e6fb05 
+
+git show --stat f380289745dc67603a04ae09a5ed251bf1bc37f3 > confirmacion.txt

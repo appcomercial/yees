@@ -1,0 +1,32 @@
+notas.txt
+C:/wamp64/www/app/carlosjimenez/yees/
+C:/wamp64/www/app/diagramap/
+
+
+git show --stat commit 
+git log --stat > ./../nombre.txt
+cd C:\wamp64\www\app\carlosjimenez\yees\_Jornada\05_01_2023_05_15_2023\
+
+git show --stat > C:\wamp64\www\app\carlosjimenez\yees\_Jornada\05_01_2023_05_15_2023\confirmaciones_de_mayo_2.txt
+
+cd C:\wamp64\www\app\diagramap
+
+git show --stat 5ef08d6fb2f8c94c8d4f1d340e7c5352bdbdaddb > C:\wamp64\www\app\carlosjimenez\yees\_Jornada\05_01_2023_05_15_2023\12_de_mayo.txt
+
+
+git show --compact-summary 6daa1d0ba20e6f8284af215dc857da44087e9c83 > C:\wamp64\www\app\carlosjimenez\yees\_Jornada\05_01_2023_05_15_2023\13_de_mayo.txt
+
+retroceso
+
+
+Confirmaciones 
+git show --stat xxxxxxxx > confirmacion.txt
+
+git show --stat git show --stat d76f702 > C:\wamp64\www\app\appcomercial\rosaleecordova\mayo\confirmacion.txt 
+
+
+> C:\wamp64\www\app\appcomercial\rosaleecordova\mayo\confirmacion.txt
+
+C:\wamp64\www\app\appcomercial\rosaleecordova\mayo\
+cd C:\wamp64\www\app\appcomercial\diagramap
+

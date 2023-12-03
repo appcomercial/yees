@@ -1,0 +1,26 @@
+1 enero  
+2 febrero  
+3 marzo  
+4 abril  
+5 Mayo  
+6 junio  
+7 julio  
+8 agosto  
+9 septiembre 
+10 octubre  
+11 noviembre 
+12 diciembre 
+
+Mes de Mayo requiere reporte completo.
+
+ git show eb76472375c5cf3fc50c4d7391ab2394a7e6fb05 > nombre.txt
+
+cd C:\wamp64\www\app\appcomercial\diagramap
+
+ git show --medium eb76472375c5cf3fc50c4d7391ab2394a7e6fb05 
+
+git show --stat fd311986cc1dac75664c4eada6785ac8153d748d > C:\wamp64\www\app\appcomercial\rosaleecordova\06_01_2023_06_31_2023\confirmacion.txt
+
+
+
+cd C:\wamp64\www\app\appcomercial\appunidosalservicio\info.php
